@@ -1,0 +1,86 @@
+/*Css app*/
+.app{
+    background-image: url(../image/log-reg/bg.jpg);
+    background-size: cover;
+    font-family: cursive;
+    position: relative;
+    z-index: 1;
+}
+
+/* Css main */
+.main {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+}
+
+/*Overlay css*/
+
+/*Css z-index*/
+.header, .main, .footer{
+    z-index: 3;
+}
+
+/* Css input button select */
+input, button,
+select, option{
+    background-color: rgb(149 142 142 / 30%) !important;
+    border: none !important;
+    width: 100% !important;
+    color: var(--bs-white) !important;
+}
+
+/* input::placeholder{
+    text-shadow: 1.2px 1.2px #959494;
+    color: #424248 !important;
+} */
+
+.form-control:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-select:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* CSS LABEL */
+label {
+    position: absolute;
+    pointer-events: none;
+    left: 12px;
+    top: 12px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+/* 
+.lable-dp{
+    position: absolute;
+    pointer-events: none;
+    left: 12px;
+    top: 12px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+} */
+
+/* active state */
+input:focus~label,
+input:valid~label {
+    top: -14px;
+}
+
+/*css valid*/
+.error {
+    border: 2px solid red !important;
+}
+
+.success {
+    border: 2px solid green !important;
+}

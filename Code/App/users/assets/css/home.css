@@ -1,0 +1,96 @@
+/* body css */
+body{
+    
+}
+
+/* note 1 */
+.content-wrap {
+    z-index: 1;
+    /*đặt độ dài linh hoạt trên các hàng linh hoạt*/
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+}
+
+/* bg-gioithieu */
+.bg-gioithieu {
+    background-image: url(../image/home/gioithieu.jpg);
+    background-size: cover;
+}
+
+/* bg-linear-gradient-2 */
+.bg-trainghiem {
+    background-image: url(../image/home/trainghiem.jpg);
+    background-size: cover;
+}
+
+/* bg-linear-gradient-3 */
+.bg-general {
+    background: #8e9eab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #e1e7ec); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #e1e7ec);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.shape {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /*ko cho sự kiện phản ứng với con trỏ*/
+    pointer-events: none;
+}
+
+.shape>svg,
+.shape>img {
+    -webkit-transition: -webkit-transform 150ms linear;
+    transition: -webkit-transform 150ms linear;
+    transition: transform 150ms linear;
+    transition: transform 150ms linear, -webkit-transform 150ms linear;
+    z-index: -1;
+}
+
+/* show data*/
+/* [data-show=startbox] {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: 3s all ease;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    will-change: opacity, transform;
+} */
+
+/* .activeShow{
+    transform: translateY(0px); 
+    transition-duration: .9s;
+    opacity: 1;
+} */
+
+/* swiper */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 110px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+/* end swiper */
+
+/* end main*/

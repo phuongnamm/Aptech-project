@@ -1,0 +1,88 @@
+body{
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-contact{
+    background-image: url(../image/contact/Background.png);
+    display: flex;
+    justify-content: center;
+    background-size: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+.section-title{
+    font-size: 30px;
+    color: #000;
+}
+.section-contact_text{
+    text-align: center;
+    font-size: 30px;
+}
+.section-contact_text>h3 {
+    color: #F01F4B;
+    font-size: 70px;
+    font-family: Montserrat;
+    font-weight: normal;
+    text-shadow: 3px 3px 0 #ffffff, 5px 5px 0 #d9d5bf, 7px 7px 0 #9a988b;
+}
+.section-title_numberphone{
+    margin: 20px 0;
+}
+.section-title_opentime{
+    margin-top: 40px;
+}
+.section-title_address{
+    margin-top: 40px;
+}
+.contact-method{
+    display: flex;
+    margin-top: 60px;
+    font-size: 15px;
+    position: relative; 
+}
+.contact-method i:hover{
+    border-radius: 100%;
+}
+.method-news i{
+    font-size: 80px;
+    color: #F01F4B;
+}
+.method-facebook i{
+    color: #F01F4B;
+    font-size: 80px;
+}
+.method-twitter i{
+    color: #F01F4B;
+    font-size: 80px;
+}
+.method-youtube i{
+    color: #F01F4B;
+    font-size: 80px;
+}
+.map{
+    margin-top: 50px;
+    text-align: center;
+}
+.map iframe{
+    border-radius: 10px;
+}
+.text-accent-1 {
+    color: #F01F4B !important;
+}
+.form-contact:focus{
+    border-color: #F01F4B !important;
+    box-shadow: 0 0 0 0.25rem rgb(240 31 75 / 25%) !important;
+}
+@media only screen and (max-width: 768px) {
+    .contact-method{
+        display: block;
+        margin-top: 100px;
+        overflow-x: hidden;
+    }
+    .header-contact{
+        height: 250px;
+        width: 100%;
+    }
+}
